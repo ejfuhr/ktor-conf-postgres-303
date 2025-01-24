@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.EnvironmentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-01-22T21:42:11" hostname="DESKTOP-SOB9JD3" time="2.436">
+  <properties/>
+  <testcase name="test enviro direct" classname="com.example.EnvironmentTest" time="1.976"/>
+  <testcase name="test environment" classname="com.example.EnvironmentTest" time="0.459"/>
+  <system-out><![CDATA[Environment test
+2025-01-22 14:42:12.609 [DefaultDispatcher-worker-1] TRACE i.ktor.client.plugins.HttpPlainText - Adding Accept-Charset=UTF-8 to http:///enviro
+key:: ktor -> value:: {application={modules=[com.example.ApplicationKt.module]}, deployment={port=8080}, database={driverClassName=org.postgresql.Driver, url=jdbc:postgresql://localhost:5432/jpastuff, user=postgres, password=Louis1401}}
+key:: postgres -> value:: {url=jdbc:postgresql://localhost:5432/jpastuff, user=postgres, password=Louis1401}
+2025-01-22 14:42:12.733 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2025-01-22 14:42:12.775 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - got url jdbc:postgresql://localhost:5432/jpastuff
+2025-01-22 14:42:13.552 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - got url jdbc:postgresql://localhost:5432/jpastuff
+Environment check
+2025-01-22 14:42:13.630 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.915 seconds.
+2025-01-22 14:42:13.633 [DefaultDispatcher-worker-1 @coroutine#4] INFO  io.ktor.test - Responding at http://localhost:80
+2025-01-22 14:42:13.633 [DefaultDispatcher-worker-1 @coroutine#4] INFO  io.ktor.test - Responding at https://localhost:443
+2025-01-22 14:42:13.659 [DefaultDispatcher-worker-2 @request#3] TRACE io.ktor.server.routing.Routing - Trace for [enviro]
+/, segment:0 -> SUCCESS @ /
+  /json, segment:0 -> FAILURE "Selector didn't match" @ /json
+  /cities, segment:0 -> FAILURE "Selector didn't match" @ /cities
+  /users, segment:0 -> FAILURE "Selector didn't match" @ /users
+  /html-dsl, segment:0 -> FAILURE "Selector didn't match" @ /html-dsl
+  /styles.css, segment:0 -> FAILURE "Selector didn't match" @ /styles.css
+  /html-css-dsl, segment:0 -> FAILURE "Selector didn't match" @ /html-css-dsl
+  /, segment:0 -> SUCCESS @ /
+    /(method:GET), segment:0 -> FAILURE "Not all segments matched" @ /(method:GET)
+  /static, segment:0 -> FAILURE "Selector didn't match" @ /static
+  /enviro, segment:1 -> SUCCESS @ /enviro
+    /enviro/(method:GET), segment:1 -> SUCCESS @ /enviro/(method:GET)
+  /authors, segment:0 -> FAILURE "Selector didn't match" @ /authors
+  /books, segment:0 -> FAILURE "Selector didn't match" @ /books
+Matched routes:
+  "" -> "enviro" -> "(method:GET)"
+Routing resolve result:
+  SUCCESS @ /enviro/(method:GET)
+2025-01-22 14:42:13.675 [DefaultDispatcher-worker-2 @request#3] TRACE i.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2025-01-22 14:42:13.706 [DefaultDispatcher-worker-4] TRACE i.k.client.plugins.HttpCallValidator - Validating response for request http://localhost/enviro
+2025-01-22 14:42:13.706 [DefaultDispatcher-worker-4] TRACE i.k.c.p.DefaultResponseValidation - Skipping default response validation for http://localhost/enviro
+2025-01-22 14:42:13.717 [DefaultDispatcher-worker-4] TRACE i.k.c.plugins.defaultTransformers - Transformed with default transformers response body for http://localhost/enviro to class kotlinx.io.Source
+2025-01-22 14:42:13.722 [DefaultDispatcher-worker-4] TRACE i.k.c.plugins.defaultTransformers - Transformed with default transformers response body for http://localhost/enviro to class kotlinx.io.Source
+Environment test
+2025-01-22 14:42:13.787 [DefaultDispatcher-worker-3] TRACE i.ktor.client.plugins.HttpPlainText - Adding Accept-Charset=UTF-8 to http:///
+2025-01-22 14:42:13.791 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2025-01-22 14:42:13.796 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - got url jdbc:postgresql://localhost:5432/jpastuff
+2025-01-22 14:42:14.086 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - got url jdbc:postgresql://localhost:5432/jpastuff
+Environment check
+2025-01-22 14:42:14.177 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - Application started in 0.387 seconds.
+2025-01-22 14:42:14.177 [DefaultDispatcher-worker-5 @coroutine#16] INFO  io.ktor.test - Responding at http://localhost:80
+2025-01-22 14:42:14.177 [DefaultDispatcher-worker-5 @coroutine#16] INFO  io.ktor.test - Responding at https://localhost:443
+2025-01-22 14:42:14.180 [DefaultDispatcher-worker-4 @request#15] TRACE io.ktor.server.routing.Routing - Trace for []
+/, segment:0 -> SUCCESS @ /
+  /json, segment:0 -> FAILURE "Selector didn't match" @ /json
+  /cities, segment:0 -> FAILURE "Selector didn't match" @ /cities
+  /users, segment:0 -> FAILURE "Selector didn't match" @ /users
+  /html-dsl, segment:0 -> FAILURE "Selector didn't match" @ /html-dsl
+  /styles.css, segment:0 -> FAILURE "Selector didn't match" @ /styles.css
+  /html-css-dsl, segment:0 -> FAILURE "Selector didn't match" @ /html-css-dsl
+  /, segment:0 -> SUCCESS @ /
+    /(method:GET), segment:0 -> SUCCESS @ /(method:GET)
+  /static, segment:0 -> FAILURE "Selector didn't match" @ /static
+  /enviro, segment:0 -> FAILURE "Selector didn't match" @ /enviro
+  /authors, segment:0 -> FAILURE "Selector didn't match" @ /authors
+  /books, segment:0 -> FAILURE "Selector didn't match" @ /books
+Matched routes:
+  "" -> "<slash>" -> "(method:GET)"
+Routing resolve result:
+  SUCCESS @ /(method:GET)
+2025-01-22 14:42:14.181 [DefaultDispatcher-worker-4 @request#15] TRACE i.k.s.p.c.ContentNegotiation - Skipping because body is already converted.
+2025-01-22 14:42:14.184 [DefaultDispatcher-worker-8] TRACE i.k.client.plugins.HttpCallValidator - Validating response for request http://localhost/
+2025-01-22 14:42:14.185 [DefaultDispatcher-worker-8] TRACE i.k.c.p.DefaultResponseValidation - Skipping default response validation for http://localhost/
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
