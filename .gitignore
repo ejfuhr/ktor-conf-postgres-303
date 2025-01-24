@@ -11,7 +11,7 @@
 .mtj.tmp/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -32,3 +32,5 @@ replay_pid*
 /.idea/
 /.kotlin/
 
+/build/
+/.gradle/
